@@ -12,7 +12,10 @@ set ignorecase      " ignore case when searching
 set smartcase       " case enable search if there is a capital letter
 set title           " show title in console title bar
 set tags=tags;/     " really important for ctags (checks all dirs(upto the root) for a tag)
-set expandtab       " expands tabs with spaces
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
+set noexpandtab     " does not expands tabs with spaces
 filetype plugin indent on  " reqd. by taglist.vim plugin
 syntax off
 autocmd BufEnter * lcd %:p:h    " change working dir to current file
